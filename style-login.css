@@ -1,0 +1,305 @@
+/*
+general formatting
+*/
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.pageBody {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./movy.jpg");
+    background-color:black;
+    padding-top: 5%;
+}
+/*
+navBar
+*/
+.navBar {
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 20%;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: flex-start;
+    min-height: 30px;
+    color: white;
+    
+}
+
+.navBar h1 {
+    font-size: 2rem;
+    flex-basis: 30%;
+}
+
+.navBar div {
+    min-height: 50%;
+    min-width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navBar input {
+    height: 80%;
+}
+
+#logButton{
+    color: white;
+    background-color: rgb(45, 98, 243);
+    border-radius: 5px;
+    height: 70%;
+    max-height: 25px;
+    width: 55%;
+    margin-left: 10%;
+    border-style: none;
+}
+
+#regAnchor:visited {
+    color:  white;
+}
+
+#regAnchor:active {
+    color:  rgb(45, 98, 243);
+}
+
+/*
+login window
+*/
+
+.loginWindowContainer {
+    display: flex;
+    flex-basis: 100%;
+    width: 100%;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85), transparent);
+    justify-content: flex-end;
+    flex: 1 1 95%;
+}
+
+.loginWindow {
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content:space-around;
+    align-items: center;
+    min-width: 100%;
+    align-self: center;
+    min-height: 65%;
+    border-radius: 4px;
+    padding-bottom: 5%;
+    padding-top: 3%;
+
+}
+
+#logWindowButton {
+    color: white;
+    background-color: rgb(45, 98, 243);
+}
+
+.loginFields {
+    display: flex;
+    flex-flow: column;
+    width: 95%;
+}
+
+.loginFields >* {
+    padding:10px;
+    margin:5px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.regLogButtons {
+    display: flex;
+    padding:10px;
+    margin:5px;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+/*
+footer related
+*/
+.footer {
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-image: linear-gradient(transparent, black, black, black, black);
+    flex: 1 1 40%;
+    
+}
+
+.footerAnchors {
+    padding: 3%;
+    display: flex;
+    height: 20%;
+    flex-flow: column wrap;
+    row-gap: 2%;
+    column-gap: 5%;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (min-width: 600px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .pageBody {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image: url("./movy.jpg");
+        background-color:black;
+        padding-top: 0%;
+    }
+    /*
+    navBar
+    */
+    .navBar {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        flex-basis: 10%;
+        padding:5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        min-height: 30px;
+        height: 15%;
+        color: white;        
+    }
+    
+    .navBar div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 300px;
+    }
+    
+    #logButton{
+        color: white;
+        background-color: rgb(45, 98, 243);
+        border-radius: 5px;
+        height: 70%;
+        width: 55%;
+        max-width: 100px;
+        margin-left: 10%;
+        border-style: none;
+    }
+    
+    #regAnchor:active {
+        color:  rgb(45, 98, 243);
+    }
+    
+    #regAnchor:visited {
+        color:  white;
+    }
+    /*
+    login window
+    */
+    
+    .loginWindowContainer {
+        display: flex;
+        flex-basis: 60%;
+        align-self: center;
+        width: 300px;
+        background-image: none;
+    }
+    
+    .loginWindow {
+        color: white;
+        display: flex;
+        flex-flow: column;
+        background-color: rgba(0, 0, 0, 0.85);
+        justify-content:space-around;
+        align-items: center;
+        min-width: 100%;
+        align-self: center;
+        min-height: 65%;
+        border-radius: 4px;
+        padding-bottom: 5%;
+        padding-top: 3%;
+        
+    }
+    
+    #logWindowButton {
+        color: white;
+        background-color: rgb(45, 98, 243);
+    }
+    
+    .loginFields {
+        display: flex;
+        flex-flow: column;
+        width: 95%;
+    }
+    
+    .loginFields >* {
+        padding:10px;
+        margin:5px;
+        border-radius: 5px;
+        border-width: 1px;
+    }
+    
+    .regLogButtons {
+        display: flex;
+        padding:10px;
+        margin:5px;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+    
+    /*
+    footer related
+    */
+    .footer {
+        padding: 5%;
+        padding-top: 7%;
+        color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        flex: 1 1 40%;
+        
+    }
+    
+    .footerAnchors {
+        padding: 3%;
+        display: flex;
+        height: 20%;
+        flex-flow: column wrap;
+        row-gap: 2%;
+        justify-content: space-evenly;
+        column-gap: 5%;
+    }
+    
+
+}
